@@ -65,8 +65,7 @@ const Popular = () => {
                         <ThreeCircles color="#d0021b"/>
                     </div>             
              : null} 
-            {repos.length ? <Repos repos={repos}/> : null}
-           
+            {repos.length ? <Repos repos={repos}/> : null}           
         </>
     );
 }

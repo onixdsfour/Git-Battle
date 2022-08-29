@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>        
         <Routes>
           <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="popular" element={<Popular />}/>               
               <Route path="battle" element={<Battle />} />
               <Route path='*' element={<p className='path-error'>Page not found</p>}></Route>

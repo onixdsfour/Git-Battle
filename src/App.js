@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 import Home from './pages/home';
 import Popular from './pages/popular';
 import Battle from './pages/battle';
@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-     
-      <BrowserRouter>        
+    
+      <HashRouter basename='/'>        
         <Routes>
           <Route path="/" element={<Layout />}>
               <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
               <Route path='*' element={<p className='path-error'>Page not found</p>}></Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

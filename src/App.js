@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Popular from './pages/popular';
 import Battle from './pages/battle';
 import Layout from './pages/layout';
+import Results from './conmponents/results'; 
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="popular" element={<Popular />}/>               
               <Route path="battle" element={<Battle />} />
+              <Route path="battle/results" element={<Results />} />
               <Route path='*' element={<p className='path-error'>Page not found</p>}></Route>
           </Route>
         </Routes>

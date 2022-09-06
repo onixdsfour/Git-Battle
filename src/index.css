@@ -162,3 +162,12 @@ nav a {
 a {
   text-decoration: none;
 }
+
+.username,  .users_data {
+  text-align: center;
+}
+
+.scores {
+  font-weight: bold;
+  font-size: 18px;
+}
